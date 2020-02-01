@@ -17,7 +17,7 @@ namespace Projeto2020.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Projeto2020 é um sistema de genrenciamento de estoque.";
 
             return View();
         }
