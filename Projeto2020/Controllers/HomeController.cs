@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Projeto2020.Models;
+using Projeto2020.Models.ViewModels;
 
 namespace Projeto2020.Controllers
 {
