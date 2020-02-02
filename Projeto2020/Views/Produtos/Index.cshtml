@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Projeto2020.Models.Categoria>
+﻿@model IEnumerable<Projeto2020.Models.Produto>
 
 @{
     ViewData["Title"] = "Index";
@@ -15,6 +15,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -25,9 +28,12 @@
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Codigo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Codigo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Codigo">Delete</a>
             </td>
         </tr>
 }

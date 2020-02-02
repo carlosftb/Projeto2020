@@ -14,6 +14,7 @@ namespace Projeto2020.Data
         {
         }
 
-        public DbSet<Projeto2020.Models.Categoria> Categoria { get; set; }
+        public DbSet<Produto> Produto { get; set; }
+        public DbSet<Setor> Setor { get; set; }
     }
 }
